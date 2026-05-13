@@ -1,0 +1,24 @@
+/* Container hover effect */
+.hero-section {
+  transition: transform 0.5s ease;
+}
+
+/* Hover triggers child animations */
+.hero-section:hover .hero-image img {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section:hover .hero-text {
+  transform: translateY(-15px);
+}
+
+/* Smooth transition for image */
+.hero-image img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Smooth transition for text */
+.hero-text {
+  transition: transform 0.5s ease;
+}
